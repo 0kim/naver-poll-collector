@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Naver Cafe Poll 결과 수집기",
+  "version": "0.1",
+  "default_locale": "ko",
+
+  "description": "",
+
+  "browser_action": 
+  {
+    "default_popup": "popup.html",
+    "default_title": "Naver Cafe 투표 결과 수집기"
+  },
+
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png" },
+
+  "content_scripts": [
+    {
+      "matches" : ["http://cafe.poll.naver.com/*"],
+      "js": [ "js/jquery-1.11.2.js",
+              "js/contentscript.js",
+              "js/json2.js"]
+
+    }
+  ]
+}
