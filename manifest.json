@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Naver Cafe Poll 결과 수집기",
-  "version": "0.1",
+  "version": "0.2",
   "default_locale": "ko",
 
   "description": "",
